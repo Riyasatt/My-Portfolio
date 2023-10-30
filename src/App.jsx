@@ -17,7 +17,7 @@ function App() {
         <ThemeContext.Provider value={{theme,setTheme,navbar,setNavbar,tech,setTech,mobNav,setMobNav}} >
           <div id={theme}>
         <Router>
-          <BgImage />
+          {/* <BgImage /> */}
           <Navbar />
           <Routes>
             <Route exact path='/' element={<MainPage />} />

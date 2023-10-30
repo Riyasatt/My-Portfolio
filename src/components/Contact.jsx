@@ -4,6 +4,7 @@ import { ThemeContext } from '../Context'
 import Button from './Button'
 import { AiOutlineMail } from "react-icons/ai"
 import Reveal from "./Reveal"
+import contactimg from "/src/assets/contact.png"
 
 
 const Contact = () => {
@@ -14,7 +15,7 @@ const Contact = () => {
          <div className=' h-full  lg:flex lg:flex-row py-20 lg:py-48  justify-center items-center px-5 lg:px-20 xl:px-40'>
             <Reveal>
                <div className=' hidden lg:block'>
-                  <img src="/src/assets/contact.png" width={500} alt="" />
+                  <img src={contactimg} width={500} alt="" />
                </div>
             </Reveal>
             <div className={` flex-1 flex flex-col gap-y-5 p-5 shadow-lg rounded-xl ${theme === "light" ? "" : "shadow-gray-100/10"} `}>

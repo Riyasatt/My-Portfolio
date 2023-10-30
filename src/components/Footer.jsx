@@ -1,10 +1,7 @@
 import React from 'react'
-import { useContext } from 'react'
-import { ThemeContext } from '../Context'
 import Social from './Social'
 
 const Footer = () => {
-     const {theme}=useContext(ThemeContext)
 
   return (
     <footer>

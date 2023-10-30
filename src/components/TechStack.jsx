@@ -3,22 +3,36 @@ import Button from './Button'
 import { useContext } from 'react'
 import { ThemeContext } from '../Context'
 import Reveal from './Reveal'
+import mui from "/src/assets/mui.png"
+import c from "/src/assets/c.png"
+import tailwind from "/src/assets/tailwind.png"
+import htmlimg from "/src/assets/html.png"
+import js from "/src/assets/js.png"
+import vite from "/src/assets/vite.png"
+import java from "/src/assets/java.png"
+import cpp from "/src/assets/cpp.png"
+import git from "/src/assets/git.png"
+import github from "/src/assets/github.png"
+import netlify from "/src/assets/netlify.png"
+import css from "/src/assets/css.png"
+import canva from "/src/assets/canva.png"
+import react from "/src/assets/react.png"
 
 const TECHS=[
-     {name:"JavaScript",Image:"/src/assets/js.png",type:"web"},
-     {name:"Vite",Image:"/src/assets/vite.png",type:"web"},
-     {name:"React",Image:"/src/assets/react.png",type:"web"},
-     {name:"Material UI",Image:"/src/assets/mui.png",type:"web"},
-     {name:"Tailwind CSS",Image:"/src/assets/tailwind.png",type:"web"},
-     {name:"CSS3",Image:"/src/assets/css.png",type:"web"},
-     {name:"HTML5",Image:"/src/assets/html.png",type:"web"},
-     {name:"Java",Image:"/src/assets/java.png",type:"other"},
-     {name:"C++",Image:"/src/assets/cpp.png",type:"other"},
-     {name:"C",Image:"/src/assets/c.png",type:"other"},
-     {name:"Git",Image:"/src/assets/git.png",type:"other"},
-     {name:"GitHub",Image:"/src/assets/github.png",type:"other"},
-     {name:"Canva",Image:"/src/assets/canva.png",type:"other"},
-     {name:"Netlify",Image:"/src/assets/netlify.png",type:"other"},
+     {name:"JavaScript",Image:js,type:"web"},
+     {name:"Vite",Image:vite,type:"web"},
+     {name:"React",Image:react,type:"web"},
+     {name:"Material UI",Image:mui,type:"web"},
+     {name:"Tailwind CSS",Image:tailwind,type:"web"},
+     {name:"CSS3",Image:css,type:"web"},
+     {name:"HTML5",Image:htmlimg,type:"web"},
+     {name:"Java",Image:java,type:"other"},
+     {name:"C++",Image:cpp,type:"other"},
+     {name:"C",Image:c,type:"other"},
+     {name:"Git",Image:git,type:"other"},
+     {name:"GitHub",Image:github,type:"other"},
+     {name:"Canva",Image:canva,type:"other"},
+     {name:"Netlify",Image:netlify,type:"other"},
 
 
 ]

@@ -5,6 +5,12 @@ import HeroImg from "/src/assets/Riyasat.jpg"
 import FloatingDiv from './FloatingDiv'
 import Button from './Button'
 import Reveal from './Reveal'
+import mui from "/src/assets/mui.png"
+import c from "/src/assets/c.png"
+import tailwind from "/src/assets/tailwind.png"
+import htmlimg from "/src/assets/html.png"
+import node from "/src/assets/node.png"
+
 
 const Home = () => {
   const { theme } = useContext(ThemeContext)
@@ -48,11 +54,11 @@ const Home = () => {
         <Reveal>
         <div className='  flex justify-center lg:block lg:pr-10 relative p-10 '>
           <img src={HeroImg} alt="" className=' animate-blob-normal w-[300px] md:w-[380px] border-b-[10px] border-r-4 border-accent lg:hover:border-accent2 transition-all duration-300' />
-          <FloatingDiv image="/src/assets/mui.png" classes="w-[60px] md:w-[70px] absolute top-2 left-5 " />
-          <FloatingDiv image="/src/assets/c.png" classes="w-[60px] md:w-[70px] absolute top-48 -left-14 " />
-          <FloatingDiv image="/src/assets/tailwind.png" classes="w-[60px] md:w-[70px] absolute top-20 -left-10 " />
-          <FloatingDiv image="/src/assets/html.png" classes="w-[75px] md:w-[85px] absolute bottom-0 -left-0 " />
-          <FloatingDiv image="/src/assets/node.png" classes="w-[70px] md:w-[80px] absolute top-20 -right-6 " />
+          <FloatingDiv image={mui} classes="w-[60px] md:w-[70px] absolute top-2 left-5 " />
+          <FloatingDiv image={c} classes="w-[60px] md:w-[70px] absolute top-48 -left-14 " />
+          <FloatingDiv image={tailwind} classes="w-[60px] md:w-[70px] absolute top-20 -left-10 " />
+          <FloatingDiv image={htmlimg} classes="w-[75px] md:w-[85px] absolute bottom-0 -left-0 " />
+          <FloatingDiv image={node} classes="w-[70px] md:w-[80px] absolute top-20 -right-6 " />
         </div>
         </Reveal>
       </div>

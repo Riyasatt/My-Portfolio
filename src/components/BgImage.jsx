@@ -1,11 +1,8 @@
-import React, { useContext } from 'react'
-import { ThemeContext } from '../Context'
+import React from 'react'
 
 const BgImage = () => {
-
-  const {theme}= useContext(ThemeContext)
   return (
-    <div className= {`w-full min-h-screen ${theme === "light" ? "bg-home" : ""} bg-cover bg-center bg-no-repeat  absolute -z-10 opacity-40 blur-sm `} >
+    <div className= {`w-full min-h-screen bg-cover bg-center bg-no-repeat  absolute -z-10 opacity-40 blur-sm `} >
     </div>
   )
 }
