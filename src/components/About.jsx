@@ -4,9 +4,20 @@ import { ThemeContext } from '../Context'
 import TechStack from './TechStack'
 import Button from './Button'
 import Reveal from './Reveal'
+import Resume from "/src/assets/RiyasatResume.pdf"
 
 const About = () => {
   const { theme } = useContext(ThemeContext)
+
+  const downloadPDF = () => {
+    const pdfUrl = Resume;
+      const link = document.createElement("a");
+      link.href = pdfUrl;
+      link.download = "Riyasat Resume.pdf"; 
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+  }
 
   return (
     <div className={` min-h-screen ${theme === "light" ? "text-black" : "text-white"} overflow-hidden`} id='about'>
@@ -30,9 +41,7 @@ const About = () => {
             </Reveal>
             <Reveal>
               <div className='flex'>
-            <a href="/src/assets/resume.pdf" download className=''>
-              <Button name="Resume" classes="hover:text-black hover:bg-accent2" />
-            </a>
+              <Button name="Resume" classes="hover:text-black hover:bg-accent2" handleClick={downloadPDF} />
             </div>
             </Reveal>
           </div>
