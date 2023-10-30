@@ -2,6 +2,7 @@ import React from 'react'
 import Button from './Button'
 import { useContext } from 'react'
 import { ThemeContext } from '../Context'
+import Reveal from './Reveal'
 
 const TECHS=[
      {name:"JavaScript",Image:"/src/assets/js.png",type:"web"},
@@ -30,31 +31,33 @@ const TechStack = () => {
 
      const handleTech=(e)=>{
           setTech(e)
-          console.log(tech)
      }
 
      const showWebTech = webTech.map((link)=>(
+          <Reveal>
           <div className=' flex flex-col gap-y-4'>
-          <div className={`p-5 w-[90px] h-[90px] ${theme === "light" ? "bg-black/10 border border-black/20" : "bg-white/10 border border-white/20"} rounded-full flex flex-col justify-center items-center`}>
+          <div className={`p-5 w-[90px] h-[90px] ${theme === "light" ? "bg-black/10" : "bg-white/10"} rounded-full flex flex-col justify-center items-center`}>
                <img src={link.Image} alt="" />
           </div>
           <div className=' font-semibold'>
                {link.name}
           </div>
           </div>
+          </Reveal>
      ))
 
      const showOtherTech = otherTech.map((link)=>(
+          <Reveal>
           <div className=' flex flex-col gap-y-4'>
-          <div className={`p-5 w-[90px] h-[90px] ${theme === "light" ? "bg-black/10 border border-black/20" : "bg-white/10 border border-white/20"} rounded-full flex flex-col justify-center items-center`}>
+          <div className={`p-5 w-[90px] h-[90px] ${theme === "light" ? "bg-black/10 " : "bg-white/10"} rounded-full flex flex-col justify-center items-center`}>
                <img src={link.Image} alt="" />
           </div>
           <div className=' font-semibold'>
                {link.name}
           </div>
           </div>
+          </Reveal>
      ))
-          console.log(tech)
      
 
   return (
@@ -63,12 +66,14 @@ const TechStack = () => {
      <div className='h2'>
           Tech Stack
      </div>
-     <div className=' flex justify-center gap-x-6'>
+     <div className={`flex justify-center gap-x-6 p-2 ${theme === "light" ? "bg-black/10 " : "bg-white/10 "} rounded-2xl`}>
           <Button name="Web Techs" classes={tech==="web" ? "" : "!bg-transparent !border-2 !border-accent !text-accent "} handleClick={()=>{handleTech("web")}}/>
           <Button name="Other Techs" classes={tech==="other" ? "" : "!bg-transparent !border-2 !border-accent !text-accent"} handleClick={()=>{handleTech("other")}} />
      </div>
-     <div className=' flex gap-10 flex-wrap justify-center max-w-[500px] mx-auto'>
+     <div className='max-w-[500px] mx-auto'>
+     <div className=' flex gap-10 flex-wrap justify-center md:justify-normal'>
           {tech==="other" ? showOtherTech : showWebTech}
+     </div>
      </div>
     </div>
     </div>

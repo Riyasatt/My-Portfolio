@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage:{
-        home:'url("./src/assets/herobgc.jpg")'
+        home:'url("./src/assets/bg.jpg")'
       },
       colors:{
         light_primary:"#ffffff",
@@ -25,6 +25,9 @@ export default {
       },
       animation:{
         'blob-normal':'blob 6s ease-in-out infinite'
+      },
+      transitionProperty:{
+        "custom-all":"width 0.5s"
       }
     },
   },

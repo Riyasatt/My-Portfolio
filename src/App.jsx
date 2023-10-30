@@ -11,9 +11,10 @@ function App() {
   const [theme,setTheme]=useState("light")
   const [navbar,setNavbar]=useState(false)
   const [tech,setTech] = useState("web")
+  const [mobNav,setMobNav] = useState(false)
 
   return (
-        <ThemeContext.Provider value={{theme,setTheme,navbar,setNavbar,tech,setTech}} >
+        <ThemeContext.Provider value={{theme,setTheme,navbar,setNavbar,tech,setTech,mobNav,setMobNav}} >
           <div id={theme}>
         <Router>
           <BgImage />

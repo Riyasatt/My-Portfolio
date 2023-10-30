@@ -23,6 +23,10 @@
           @apply text-lg md:text-xl font-semibold
      }
 
+     .heading{
+          @apply text-3xl md:text-4xl 
+     }
+
      ::-webkit-scrollbar{
           @apply w-[7px]
      }
@@ -39,7 +43,7 @@
 
 html{
      scroll-behavior:smooth;
-     scroll-padding-top: 100px;
+     scroll-padding-top: 80px;
 }
 
 

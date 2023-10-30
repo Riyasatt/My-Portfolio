@@ -9,7 +9,7 @@ import LightLogo from "/src/assets/logo-dark.png"
 
 
 const navbar = () => {
-    const {theme,navbar,setNavbar}=useContext(ThemeContext)
+    const {theme,navbar,setNavbar,setMobNav}=useContext(ThemeContext)
 
     const changeNav=()=>{
       if(window.scrollY >40){
@@ -19,10 +19,14 @@ const navbar = () => {
       }
     }
 
+    const showNav=()=>{
+      setMobNav(true)
+    }
+
     window.addEventListener('scroll',changeNav)
   return (
-     <nav className= {`fixed z-20 w-screen duration-200 h-16 lg:h-[60px] transition-all  ${theme==="light" ? "text-black" :"text-white" } ${navbar ? "bg-accent text-white" :"bg-none"}` } >
-      <div className='padding-container border-purple-6001 borde1r  h-full ' >
+     <nav className= {`fixed z-20 w-full duration-200 h-16 lg:h-[60px]  ${theme==="light" ? "text-black" :"text-white" } ${navbar ? "bg-accent !text-white" :"bg-none"}` } >
+      <div className='padding-container border-purple-6001 borde1r  h-full  ' >
         <div className='flex justify-between items-center h-full'>
           <div className=' '>
             <Link to="/" >
@@ -35,11 +39,12 @@ const navbar = () => {
               <ToogleButton />
               </div>
           </div>
-          <div className='flex gap-x-5 md:hidden text-lg items-center font-semibold'>
+          <div className='flex md:hidden text-lg items-center font-semibold'>
             <ToogleButton />
-            <div className='text-xl'>
+            <div className='text-xl ml-5' onClick={showNav} >
               <HiMiniBars3BottomRight />
             </div>
+            <Nav_Link />
           </div>
         </div>
       </div>
