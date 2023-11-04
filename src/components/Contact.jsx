@@ -44,11 +44,6 @@ const Contact = () => {
                      </Reveal>
                   </div>
                </form>
-               <Reveal>
-               <div className=' text-red-600'>
-                  *Mails will not be received, its just a dummy, This feature will be added soon.. :)
-               </div>
-               </Reveal>
             </div>
 
          </div>
