@@ -15,6 +15,9 @@ const Project = () => {
         Projects
      </div>
      </Reveal>
+     <div className={`${theme==="light" ? "text-accent" : "text-accent2"} text-center pt-3   `}>
+         Hover the image for more details..
+     </div>
      <div className='px-4 md:px-0 max-w-[1300px] mx-auto py-12 md:py-20' >
           <Card />
      </div>
