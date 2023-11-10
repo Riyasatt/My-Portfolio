@@ -6,7 +6,6 @@ import Reveal from "./Reveal"
 import contactimg from "/src/assets/contact.png"
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser';
-import LoginMsg from './LoginMsg'
 
 
 const Contact = () => {
