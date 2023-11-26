@@ -36,7 +36,7 @@ const Home = () => {
           <Reveal>
             <div className="h2">
               I am a {" "}
-              <span className=" text-accent">
+              <span className={`${theme === "light" ? " text-accent" : "text-accent2"}`}>
                 <TypeAnimation
                   sequence={[
                     // Same substring at the start will only be typed out once, initially
