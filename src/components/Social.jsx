@@ -11,7 +11,7 @@ const SOCIALS=[
 
 const Social = () => {
   return (
-    <div className='flex flex-row xl:flex-col gap-x-3 xl:gap-x-0 xl:gap-y-5 text-white xl:fixed bottom-10 right-10'>
+    <div className='flex flex-row xl:flex-col gap-x-3 xl:gap-x-0 xl:gap-y-5 text-white xl:fixed bottom-10 left-10'>
           {SOCIALS.map((social)=>(
                <a href={social.link} target='_blank' className=' p-2 rounded-full bg-accent xl:hover:bg-accent2 xl:hover:text-black text-lg xl:text-2xl cursor-pointer'>
                     {social.image}

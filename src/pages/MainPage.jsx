@@ -5,6 +5,7 @@ import Project from '../components/Project'
 import Contact from '../components/Contact'
 import Social from '../components/Social'
 import Footer from '../components/Footer'
+import BackToTop from '../components/BackToTop'
 
 const MainPage = () => {
   return (
@@ -19,6 +20,7 @@ const MainPage = () => {
       </div>
     </main>
     <Footer />
+    <BackToTop/>
     </div>
   )
 }

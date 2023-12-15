@@ -13,10 +13,12 @@ import java from "/src/assets/java.png"
 import cpp from "/src/assets/cpp.png"
 import git from "/src/assets/git.png"
 import github from "/src/assets/github.png"
-import netlify from "/src/assets/netlify.png"
+import figma from "/src/assets/figma.png"
 import css from "/src/assets/css.png"
 import canva from "/src/assets/canva.png"
 import react from "/src/assets/react.png"
+import bootstrap from "/src/assets/bootstrap.png"
+
 
 const TECHS=[
      {name:"JavaScript",Image:js,type:"web"},
@@ -24,6 +26,7 @@ const TECHS=[
      {name:"React",Image:react,type:"web"},
      {name:"Material UI",Image:mui,type:"web"},
      {name:"Tailwind CSS",Image:tailwind,type:"web"},
+     {name:"Bootstrap",Image:bootstrap,type:"web"},
      {name:"CSS3",Image:css,type:"web"},
      {name:"HTML5",Image:htmlimg,type:"web"},
      {name:"Java",Image:java,type:"other"},
@@ -32,7 +35,7 @@ const TECHS=[
      {name:"Git",Image:git,type:"other"},
      {name:"GitHub",Image:github,type:"other"},
      {name:"Canva",Image:canva,type:"other"},
-     {name:"Netlify",Image:netlify,type:"other"},
+     {name:"Figma",Image:figma,type:"other"},
 
 
 ]
@@ -64,7 +67,7 @@ const TechStack = () => {
           <Reveal>
           <div className=' flex flex-col gap-y-4'>
           <div className={`p-5 w-[90px] h-[90px] ${theme === "light" ? "bg-black/10 " : "bg-white/10"} rounded-full flex flex-col justify-center items-center`}>
-               <img src={link.Image} alt="" />
+               <img src={link.Image}  alt="" />
           </div>
           <div className=' font-semibold'>
                {link.name}

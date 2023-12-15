@@ -53,6 +53,7 @@ const Home = () => {
                   speed={50}
                   repeat={Infinity}
                 />
+
               </span>
             </div>
           </Reveal>
