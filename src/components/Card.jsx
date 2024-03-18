@@ -40,10 +40,10 @@ const PROJECTS=[
         github:"1"
    },
    {
-        title:"Landing Page",
+        title:"Blood Bridge",
         image:landing,
-        stack:"JavaScript, CSS3, HTML5",
-        link:"https://roaring-elf-a4a2a2.netlify.app",
+        stack:"Reactjs, Express, Mongodb, Nodejs, Javascript",
+        link:"https://blood-bridge-rouge.vercel.app/",
         github:"1"
    },
    {
