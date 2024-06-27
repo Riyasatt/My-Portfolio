@@ -19,11 +19,11 @@ const PROJECTS=[
         github:"https://github.com/Riyasatt/CryptoTrackr"
    },
    {
-        title:"Netflix UI Clone",
+        title:"Asli Feedback",
         image:netflix,
-        stack:"JavaScript, CSS3, HTML5",
-        link:"https://endearing-sprinkles-ac5a08.netlify.app",
-        github:"1"
+        stack:"Nextjs, TypeScript, MongoDb, ShadCN",
+        link:"https://asli-feedback.vercel.app/",
+        github:"https://github.com/Riyasatt/WhisperChat"
    },
    {
         title:"To Do List",
