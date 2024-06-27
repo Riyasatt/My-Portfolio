@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import {BiLinkExternal,BiCodeAlt} from "react-icons/bi"
 import Reveal from './Reveal'
 import crypto from "/src/assets/crypto-tracker.png"
-import netflix from "/src/assets/netflix.png"
+import Feedback from "/src/assets/Screenshot 2024-06-23 193933.png"
 import todo from "/src/assets/to-do-list.png"
 import calculator from "/src/assets/calculator.png"
 import landing from "/src/assets/landing-page.png"
@@ -20,7 +20,7 @@ const PROJECTS=[
    },
    {
         title:"Asli Feedback",
-        image:netflix,
+        image:Feedback,
         stack:"Nextjs, TypeScript, MongoDb, ShadCN",
         link:"https://asli-feedback.vercel.app/",
         github:"https://github.com/Riyasatt/WhisperChat"
